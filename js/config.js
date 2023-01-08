@@ -1,5 +1,5 @@
 // Define key variables.
-const speed = 1;
+const speed = 6;
 const worldSize = 10;
 const startPoint = [5,5];
 const snake = [startPoint];
