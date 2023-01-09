@@ -119,6 +119,7 @@ const move = direction => {
     if (getItemAt(...head).type === 'checkbox' && getItemAt(...head).checked) {
         document.querySelector('h2').innerText = 'Game Over...';
         document.querySelectorAll('input').forEach(input => input.disabled = true);
+        document.querySelector('.retry-btn').style.display = "block";
 
         playWave(head);
 
