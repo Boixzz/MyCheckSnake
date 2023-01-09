@@ -14,6 +14,9 @@ html, body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input{
@@ -26,4 +29,20 @@ h1 , h2 {
 
 input.wave {
     animation: wave 0.4s cubic-bezier(.17, .67, .83, .67);
+}
+
+.retry-btn{
+    font-family: monospace;
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #5386E4;
+    border: none;
+    border-radius: 5px;
+    display: none;
+}
+
+.retry-btn:hover{
+    background-color: #809BCE;
 }
