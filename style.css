@@ -47,3 +47,28 @@ input.wave {
 .retry-btn:hover{
     background-color: #809BCE;
 }
+
+.controller{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mid-con{
+    display: flex;
+    flex-direction: column;
+}
+
+.keys{
+    color: white;
+    margin: 3px;
+    background-color: #5386E4;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+}
+
+.keys:hover{
+    background-color: #809BEC;
+}
