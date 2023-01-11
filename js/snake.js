@@ -58,6 +58,10 @@ const increaseScore = () => {
 
 // Handling User Input
 const handleInput = () => {
+    document.getElementById("left").onclick = function() {left()};
+    document.getElementById("up").onclick = function() {up()};
+    document.getElementById("down").onclick = function() {down()};
+    document.getElementById("right").onclick = function() {right()};
     document.addEventListener('keydown', e => {
         switch(e.keyCode) {
             case key.arrowUp:    movingDirection = movingDirection === 'down' ? 'down' : 'up'; break;
@@ -78,11 +82,6 @@ const handleInput = () => {
         function right(){
             movingDirection = movingDirection === 'left' ? 'left' : 'right';
         };
-        
-        document.getElementById("left").onclick = function() {left()};
-        document.getElementById("up").onclick = function() {up()};
-        document.getElementById("down").onclick = function() {down()};
-        document.getElementById("right").onclick = function() {right()};
 
         if (moveInterval === undefined) {
             moveInterval = setInterval(() => {
