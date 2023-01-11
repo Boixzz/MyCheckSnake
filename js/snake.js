@@ -65,6 +65,24 @@ const handleInput = () => {
             case key.arrowLeft:  movingDirection = movingDirection === 'right' ? 'right' : 'left'; break;
             case key.arrowRight: movingDirection = movingDirection === 'left' ? 'left' : 'right'; break;
         }
+        
+        function left(){
+            movingDirection = movingDirection === 'right' ? 'right' : 'left';
+        };
+        function up(){
+            movingDirection = movingDirection === 'down' ? 'down' : 'up';
+        };
+        function down(){
+            movingDirection = movingDirection === 'up' ? 'up' : 'down';
+        };
+        function right(){
+            movingDirection = movingDirection === 'left' ? 'left' : 'right';
+        };
+        
+        document.getElementById("left").onclick = function() {left()};
+        document.getElementById("up").onclick = function() {up()};
+        document.getElementById("down").onclick = function() {down()};
+        document.getElementById("right").onclick = function() {right()};
 
         if (moveInterval === undefined) {
             moveInterval = setInterval(() => {
