@@ -33,6 +33,7 @@ input.wave {
 }
 
 .retry-btn{
+    color: white;
     font-family: monospace;
     text-align: center;
     margin: 10px;
