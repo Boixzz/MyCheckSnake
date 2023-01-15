@@ -81,3 +81,65 @@ input.wave {
         display: none;
     }
 }
+
+/* This is style for dark mode. */
+.switch {
+    margin-left: 150px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    transform: scale(0.5);
+}
+
+.switch input {
+    display: none;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: #b892ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.dark-mode {
+    background: #0b0a14;
+}
+
+.dark-mode h1{
+    color: #f7f0e9;
+}
+
+.dark-mode h2 {
+    color: #f7f0e9;
+}
+
+.dark-mode .keys, .retry-btn {
+    background: #b892ff;
+}
