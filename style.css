@@ -89,7 +89,7 @@ input.wave {
     display: inline-block;
     width: 60px;
     height: 34px;
-    transform: scale(0.5);
+    transform: scale(0.7);
 }
 
 .switch input {
