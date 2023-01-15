@@ -54,6 +54,37 @@ const increaseScore = () => {
 
     currentScore = parseInt(score.innerText, 10);
     score.innerText = currentScore + 1;
+    
+    if (currentScore == 6) {
+        changeMode();
+    }
+    if (currentScore == 12) {
+        changeMode();
+    }
+    if (currentScore == 18) {
+        changeMode();
+    }
+    if (currentScore == 24) {
+        changeMode();
+    }
+    if (currentScore == 30) {
+        changeMode();
+    }
+    if (currentScore == 36) {
+        changeMode();
+    }
+    if (currentScore == 42) {
+        changeMode();
+    }
+    if (currentScore == 48) {
+        changeMode();
+    }
+    if (currentScore == 54) {
+        changeMode();
+    }
+    if (currentScore == 60) {
+        changeMode();
+    }
 }
 
 // Handling User Input
